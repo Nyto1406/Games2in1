@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/word_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:text=" Hangman"
+        android:fontFamily="@font/butterfont"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/word_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter a word (4-12 characters)"
+        android:inputType="text" />
+
+    <ImageView
+        android:id="@+id/hangman_image"
+        android:layout_width="390dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/hangman_0" />
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="7">
+
+        <!-- 26 letter buttons -->
+        <Button
+            android:id="@+id/letter_a"
+            android:layout_width="54.2dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:textSize="15sp"
+            android:text="A" />
+
+        <Button
+            android:id="@+id/letter_b"
+            android:layout_width="54.2dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:textSize="15sp"
+            android:text="B" />
+
+        <Button
+            android:id="@+id/letter_c"
+            android:layout_width="54.2dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:textSize="15sp"
+            android:text="C" />
+
+        <Button
+            android:id="@+id/letter_d"
+            android:layout_width="54.2dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:textSize="15sp"
+            android:text="D" />
+
+        <Button
+            android:id="@+id/letter_e"
+            android:layout_width="54.2dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:textSize="15sp"
+            android:text="E" />
+
+        <Button
+            android:id="@+id/letter_f"
+            android:layout_width="54.2dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:textSize="15sp"
+            android:text="F" />
+
+        <Button
+            android:id="@+id/letter_g"
+            android:layout_width="54.2dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:textSize="15sp"
+            android:text="G" />
+
+        <Button
+            android:id="@+id/letter_h"
+            android:layout_width="54.2dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:textSize="15sp"
+            android:text="H" />
+
+        <Button
+            android:id="@+id/letter_i"
+            android:layout_width="54.2dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:textSize="15sp"
+            android:text="I" />
+
+        <Button
+            android:id="@+id/letter_j"
+            android:layout_width="54.2dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:textSize="15sp"
+            android:text="J" />
+
+        <Button
+            android:id="@+id/letter_k"
+            android:layout_width="54.2dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:textSize="15sp"
+            android:text="K" />
+
+        <Button
+            android:id="@+id/letter_l"
+            android:layout_width="54.2dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:textSize="15sp"
+            android:text="L" />
+
+        <Button
+            android:id="@+id/letter_m"
+            android:layout_width="54.2dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:textSize="15sp"
+            android:text="M" />
+
+        <Button
+            android:id="@+id/letter_n"
+            android:layout_width="54.2dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:textSize="15sp"
+            android:text="N" />
+
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="6">
+
+        <Button
+            android:id="@+id/letter_o"
+            android:layout_width="63.3dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:textSize="15sp"
+            android:text="O" />
+
+        <Button
+            android:id="@+id/letter_p"
+            android:layout_width="63.3dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:textSize="15sp"
+            android:text="P" />
+
+        <Button
+            android:id="@+id/letter_q"
+            android:layout_width="63.3dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:textSize="15sp"
+            android:text="Q" />
+
+        <Button
+            android:id="@+id/letter_r"
+            android:layout_width="63.3dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:textSize="15sp"
+            android:text="R" />
+
+        <Button
+            android:id="@+id/letter_s"
+            android:layout_width="63.3dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:textSize="15sp"
+            android:text="S" />
+
+        <Button
+            android:id="@+id/letter_t"
+            android:layout_width="63.3dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:textSize="15sp"
+            android:text="T" />
+
+        <Button
+            android:id="@+id/letter_u"
+            android:layout_width="63.3dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:textSize="15sp"
+            android:text="U" />
+
+        <Button
+            android:id="@+id/letter_v"
+            android:layout_width="63.3dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:textSize="15sp"
+            android:text="V" />
+
+        <Button
+            android:id="@+id/letter_w"
+            android:layout_width="63.3dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:textSize="15sp"
+            android:text="W" />
+
+        <Button
+            android:id="@+id/letter_x"
+            android:layout_width="63.3dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:textSize="15sp"
+            android:text="X" />
+
+        <Button
+            android:id="@+id/letter_y"
+            android:layout_width="63.3dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:textSize="15sp"
+            android:text="Y" />
+
+        <Button
+            android:id="@+id/letter_z"
+            android:layout_width="63.3dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:textSize="15sp"
+            android:text="Z" />
+
+    </GridLayout>
+
+</LinearLayout>
