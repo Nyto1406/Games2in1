@@ -24,7 +24,7 @@
 >這個專案遵循標準的Android專案結構,組織方式如下:
 >
 >```
->Games2in1/
+>>Games2in1/
 >>├── app/
 >>│   ├── src/
 >>│   │   ├── androidTest/
