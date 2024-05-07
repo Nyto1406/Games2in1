@@ -25,27 +25,69 @@
 >
 >```
 >Games2in1/
->├── app/
->│   ├── src/
->│   │   ├── main/
->│   │   │   ├── java/
->│   │   │   │   └── com/example/myapplication/
->│   │   │   │       ├── MainActivity.kt
->│   │   │   │       ├── HangmanGameScreen.kt
->│   │   │   │       └── BullsAndCowsGameScreen.kt
->│   │   │   └── res/
->│   │   │       ├── layout/
->│   │   │       │   ├── activity_main.xml
->│   │   │       │   ├── hangman_game_screen.xml
->│   │   │       │   └── bulls_and_cows_game_screen.xml
->│   │   │       ├── values/
->│   │   │       │   └── strings.xml
->│   │   │       └── ...
->│   ├── build.gradle
->│   └── ...
->├── build.gradle
->└── ...
->```
+>>├── app/
+>>│   ├── src/
+>>│   │   ├── androidTest/
+>>│   │   │   └── java/
+>>│   │   │       └── com/example/myapplication/
+>>│   │   │           └── ExampleInstrumentedTest.kt
+>>│   │   ├── main/
+>>│   │   │   ├── assets/
+>>│   │   │   │   └── words.txt
+>>│   │   │   ├── java/
+>>│   │   │   │   └── com/example/myapplication/
+>>│   │   │   │       ├── MainActivity.kt
+>>│   │   │   │       ├── HangmanGameScreen.kt
+>>│   │   │   │       ├── BullsAndCowsGameScreen.kt
+>>│   │   │   │       ├── ui/
+>>│   │   │   │       │   ├── theme/
+>>│   │   │   │       │   │   ├── Color.kt
+>>│   │   │   │       │   │   ├── Theme.kt
+>>│   │   │   │       │   │   └── Type.kt
+>>│   │   │   │       └── Extension1.kt
+>>│   │   │   └── res/
+>>│   │   │       ├── drawable/
+>>│   │   │       │   ├── hangman_0.png
+>>│   │   │       │   ├── hangman_1.png
+>>│   │   │       │   ├── hangman_2.png
+>>│   │   │       │   ├── hangman_3.png
+>>│   │   │       │   ├── hangman_4.png
+>>│   │   │       │   ├── hangman_5.png
+>>│   │   │       │   └── hangman_6.png
+>>│   │   │       ├── font/
+>>│   │   │       │   └── butterfont.otf
+>>│   │   │       ├── layout/
+>>│   │   │       │   ├── activity_main.xml
+>>│   │   │       │   ├── bulls_and_cows_game_screen.xml
+>>│   │   │       │   └── hangman_game_screen.xml
+>>│   │   │       ├── mipmap/
+>>│   │   │       │   ├── ic_launcher.webp
+>>│   │   │       │   └── ic_launcher_round.webp
+>>│   │   │       ├── values/
+>>│   │   │       │   ├── colors.xml
+>>│   │   │       │   ├── strings.xml
+>>│   │   │       │   └── themes.xml
+>>│   │   │       └── xml/
+>>│   │   │           ├── backup_rules.xml
+>>│   │   │           └── data_extraction_rules.xml
+>>│   │   └── test/
+>>│   │       └── java/
+>>│   │           └── com/example/myapplication/
+>>│   │               └── ExampleUnitTest.kt
+>>│   ├── build.gradle
+>>│   └── ...
+>>├── build.gradle
+>>├── Gradle Scripts/
+>>│   ├── build.gradle.kts (Project: My_Application)
+>>│   ├── build.gradle.kts (Module: app)
+>>│   ├── proguard-rules.pro (ProGuard Rules for ':app')
+>>│   ├── project.properties (Project Properties)
+>>│   ├── gradle-wrapper.properties (Gradle Version)
+>>│   ├── libs.versions.toml (Version Catalog)
+>>│   ├── local.properties (SDK Location)
+>>│   └── settings.gradle.kts (Project Settings)
+>>└── ...
+```
 ## 關鍵檔案
 >1. `MainActivity.kt`: 主要活動,負責啟動猜字遊戲和數字遊戲。
 >2. `HangmanGameScreen.kt`: 一個 DialogFragment ,代表猜字遊戲的畫面。
